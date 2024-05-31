@@ -1,0 +1,14 @@
+cargo-features = ["edition2024"]
+[package]
+name = "securedoor"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+blake3 = { version = "1.5.1", features = ["serde", "rayon"] }
+rand = { version = "0.8.5", features = ["nightly"] }
+rayon = "1.10.0"
+thiserror = "1.0.61"
+tokio = { version = "1.37.0", features = ["full"] }
+serde = { version = "1.0.202", features = ["derive"] }
+bincode = "1.3.3"
